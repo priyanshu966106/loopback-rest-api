@@ -12,5 +12,9 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "company": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

@@ -1,1 +1,18 @@
-{}
+{
+  "db": {
+    "name": "db",
+    "localStorage": "",
+    "file": "my_data.json",
+    "connector": "memory"
+  },
+  "mysql": {
+    "host": "166.62.10.224",
+    "port": 3306,
+    "url": "",
+    "database": "restapi54",
+    "password": "pharma@3122",
+    "name": "mysql",
+    "user": "pharmacia",
+    "connector": "mysql"
+  }
+}
