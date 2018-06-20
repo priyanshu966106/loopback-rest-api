@@ -16,5 +16,17 @@
   "company": {
     "dataSource": "mysql",
     "public": true
+  },
+  "account": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "product": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "category": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

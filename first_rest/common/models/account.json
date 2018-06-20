@@ -1,0 +1,23 @@
+{
+  "name": "account",
+  "plural": "accounts",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accno": {
+      "type": "number",
+      "required": true
+    },
+    "bank_name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
