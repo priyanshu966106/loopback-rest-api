@@ -28,5 +28,20 @@
   "category": {
     "dataSource": "mysql",
     "public": true
+  },
+  "ACL":{
+    "dataSource":"mysql",
+    "public":false
+  },
+  "AccessToken": {
+    "dataSource": "mysql",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "hasMany",
+        "model": "account",
+        "foreignKey": "userId"
+      }
+    }
   }
 }
