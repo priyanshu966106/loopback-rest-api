@@ -14,5 +14,21 @@
     "name": "mysql",
     "user": "pharmacia",
     "connector": "mysql"
+  },
+  "local-storage": {
+    "name": "local-storage",
+    "connector": "loopback-component-storage",
+    "provider":"filesystem",
+    "root":"./server/localstorage"
+  },
+  "amazonS3":{
+    "provider":"amazon",
+    "name":"amazonS3",
+    "connector": "loopback-component-storage",
+    "key":"saH9HMRQDB8xpffXR4Jn9ZwykPHeB2mZwLYvgSkr",
+    "keyd":"AKIAJN4UQIRJT3N7C3QQ"
+
+
   }
+
 }

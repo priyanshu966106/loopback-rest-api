@@ -10,7 +10,8 @@
       "loopback/common/mixins",
       "loopback/server/mixins",
       "../common/mixins",
-      "./mixins"
+      "./mixins",
+      "../node_modules/loopback-validations-mixin"
     ]
   },
   "company": {
@@ -19,7 +20,10 @@
   },
   "account": {
     "dataSource": "mysql",
-    "public": true
+    "public": true,
+    "options": {
+      "emailVerificationRequired": false
+    }
   },
   "product": {
     "dataSource": "mysql",
@@ -29,9 +33,9 @@
     "dataSource": "mysql",
     "public": true
   },
-  "ACL":{
-    "dataSource":"mysql",
-    "public":false
+  "ACL": {
+    "dataSource": "mysql",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "mysql",
@@ -43,5 +47,13 @@
         "foreignKey": "userId"
       }
     }
+  },
+  "UserRole": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Container": {
+    "dataSource": "amazonS3",
+    "public": true
   }
 }
